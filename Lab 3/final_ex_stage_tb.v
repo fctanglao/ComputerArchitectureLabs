@@ -36,7 +36,7 @@ module final_ex_stage_tb(
     wire [31:0] adder_out, alu_result_out, rdata2_out;
     wire [4:0] muxout_out;
     
-    execute uut (
+    final_ex_stage uut (
         .clk(clk),
         .ctlwb_in(ctlwb_in),
         .ctlm_in(ctlm_in),
@@ -74,39 +74,33 @@ module final_ex_stage_tb(
         $monitor("%0t\t%b\t%0d\t%0d\t%0d", $time, alu_op, alu_result_out, adder_out, muxout_out);
 
         #20;
-
-        // Test subtraction operation
+        
         alu_op = 2'b10; funct = 6'b100010;
         rdata1 = 32'd30; rdata2 = 32'd15;
         
         #10;
         
-        // Test OR operation
         alu_op = 2'b10; funct = 6'b100101;
         rdata1 = 32'd12; rdata2 = 32'd5;
         
         #10;
         
-        // Test AND operation
         alu_op = 2'b10; funct = 6'b100100;
         rdata1 = 32'd14; rdata2 = 32'd7;
         
         #10;
         
-        // Test SLT operation
         alu_op = 2'b10; funct = 6'b101010;
         rdata1 = 32'd8; rdata2 = 32'd12;
         
         #10;
         
-        // Test using sign-extended immediate
         alusrc = 1;
         alu_op = 2'b00;
         rdata1 = 32'd100; s_extend = 32'd20;
         
         #10;
         
-        // Test with different instruction fields for register destination
         regdst = 0;
         instr_2016 = 5'd15; instr_1511 = 5'd25;
         
