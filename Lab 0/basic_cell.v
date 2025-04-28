@@ -26,10 +26,9 @@ module basic_cell(
     input [1:0] Sel,
     input [3:0] I
     );
-
-    // Internal nets
+    
     wire data;
-    // D Flip Flop
+    
     always @ (posedge CLK or negedge CLR)
     begin
         if (!CLR)
@@ -37,7 +36,7 @@ module basic_cell(
         else
             Q <= data;
     end
-    // Mux
+    
     assign data = I[Sel];
 
 endmodule

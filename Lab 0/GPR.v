@@ -26,19 +26,7 @@ module GPR(
     input [3:0] D,
     input CLR, CLK, L_in, R_in
     );
-
-    /*
-    ----------------------------------
-    |  S  |   Operation    |
-    |-----|---------------|
-    | 00  | Hold          |
-    | 01  | Shift Right   |
-    | 10  | Shift Left    |
-    | 11  | Parallel Load |
-    ----------------------------------
-    */
-
-    // Instantiate 4 basic cells
+    
     basic_cell cell3 ( Q[3], CLR, CLK, S, { D[3], Q[2], L_in, Q[3] } ),
                 cell2 ( Q[2], CLR, CLK, S, { D[2], Q[1], Q[3], Q[2] } ),
                 cell1 ( Q[1], CLR, CLK, S, { D[1], Q[0], Q[2], Q[1] } ),
