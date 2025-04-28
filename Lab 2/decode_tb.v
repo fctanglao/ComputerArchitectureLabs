@@ -65,51 +65,47 @@ module decode_tb(
         clk_tb = 0;
         forever #1 clk_tb = ~clk_tb;
     end 
-
-    // MIPS Instruction Converter https://mips-converter.jeffsieu.com
+    
     initial begin
         rst_tb = 1; 
         wb_reg_write_tb = 0;
-        wb_write_reg_location_tb = 5'd2; // $v2 
+        wb_write_reg_location_tb = 5'd2;
         mem_wb_write_data_tb = 32'h64;
         if_id_npc_tb = 32'h0000001;
+        
+        if_id_instr_tb = 32'h00a41020;
 
-        // ADD $v0, $a1, $a0 
-        if_id_instr_tb = 32'h00a41020; // 32'00000000101001000001000000100000
-
-        #2 // reset enabled, initialize values
+        #2
 
         rst_tb = 0;
-        #2 // reset disabled
-            // reg_write disabled, decode RFORMAT
-
+        #2
+        
         if_id_npc_tb = 32'h0000002;
-        // BEQ $zero, $zero, 0x8
-        if_id_instr_tb = 32'h10000008; // 32'00010000000000000000000000001000
-        #2 // decode BEQ
+        
+        if_id_instr_tb = 32'h10000008;
+        #2
 
         if_id_npc_tb = 32'h0000003;
-        // LW $v0, 2($a0)
-        if_id_instr_tb = 32'h8c820002; // 32'10001100100000100000000000000010
+        
+        if_id_instr_tb = 32'h8c820002;
 
-        #2 // decode LW
+        #2
 
         if_id_npc_tb = 32'h0000004;
-        // SW $v0, 2($a0)
-        if_id_instr_tb = 32'hac820002; // 32'10101100100000100000000000000010
-        #2 // decode SW
+        
+        if_id_instr_tb = 32'hac820002;
+        #2
 
         if_id_npc_tb = 32'h0000005;
         wb_reg_write_tb = 1;
-        #2 // write to regfile  REG[2] <= h'64
-
-        //ADD $v0, $v0, $v0
-        if_id_instr_tb = 32'h00421020; // 32'00000000010000100001000000100000
+        #2
+        
+        if_id_instr_tb = 32'h00421020;
        
         if_id_npc_tb = 32'h0000006;
         wb_reg_write_tb = 0;
-        #2 // check that the value is updated
-        #2 // account for cycle delay
+        #2 
+        #2
         $display("Decode Complete");
         $finish;
 

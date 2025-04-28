@@ -39,7 +39,6 @@ module decode(
     output wire [4:0] id_ex_instr_bits_15_11
     );
     
-    // internal
     wire [31:0] sign_ext_internal,
         readdat1_internal,
         readdat2_internal;
@@ -47,19 +46,16 @@ module decode(
     wire [2:0] mem_internal;
     wire [3:0] ex_internal;
     
-    // extract instruction fields
     wire [5:0] opcode = if_id_instr[31:26];
     wire [4:0] rs = if_id_instr[25:21];
     wire [4:0] rt = if_id_instr[20:16];
     wire [4:0] rd = if_id_instr[15:11];
     
-    // instantiate sign-extend unit
     sign_extend se0(
         .immediate(if_id_instr[15:0]),
         .extended(sign_ext_internal)
     );
     
-    // instantiate register file
     reg_file rf0(
         .clk(clk),
         .rst(rst),
@@ -72,7 +68,6 @@ module decode(
         .B_readdat2(readdat2_internal)
     );
     
-    // instantiate control unit
     control c0(
         .clk(clk),
         .rst(rst),
@@ -82,7 +77,6 @@ module decode(
         .ex(ex_internal)
     );
     
-    // instantiate ID/EX latch
     ide_latch idel0(
         .clk(clk),
         .rst(rst),
@@ -95,7 +89,6 @@ module decode(
         .sign_ext(sign_ext_internal),
         .instr_bits_20_16(rt),
         .instr_bits_15_11(rd),
-        
         .wb_out(id_ex_wb),
         .mem_out(id_ex_mem),
         .ctl_out(id_ex_execute),

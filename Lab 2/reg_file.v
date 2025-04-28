@@ -32,11 +32,9 @@ module reg_file(
     output reg [31:0] B_readdat2
     );
     
-    // create an internal register file with 32 registers, each 32 bits wide
     reg [31:0] REG [0:31];
 
     initial begin
-        //$readmemh({"regData.mem"}, REG);
         REG[0] = 32'h002300AA;
         REG[1] = 32'h10654321;
         REG[2] = 32'h00100022;
@@ -56,12 +54,11 @@ module reg_file(
         end
         else begin
             if (regwrite) begin
-                if (rd != 5'b00000) begin  // don't write to register 0
+                if (rd != 5'b00000) begin
                     REG[rd] <= writedata;
                 end
             end
             
-            // always read the values regardless of regwrite
             A_readdat1 <= REG[rs];
             B_readdat2 <= REG[rt];
         end

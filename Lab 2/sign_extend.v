@@ -25,11 +25,6 @@ module sign_extend(
     output wire [31:0] extended
     );
     
-    // pre-pend 'immediate' with 16 bits of its MSB
-    // hint: {} is the concatenate or replicate operator
-    // example of concatenate: {111, 100} -> 111100
-    // example of replicate: {4{1}} -> 1111
-    
     assign extended = {{16{immediate[15]}}, immediate};
     
 endmodule
