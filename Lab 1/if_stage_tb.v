@@ -29,16 +29,16 @@ module if_stage_tb(
     reg ex_mem_pcrsrc_tb;         
     reg [31:0] ex_mem_npc_tb;
 
-    wire [31:0] IF_ID_instr_tb;   
-    wire [31:0] IF_ID_npc_tb;   
+    wire [31:0] if_id_instr_tb;   
+    wire [31:0] if_id_npc_tb;   
 
     if_stage DUT (
         .clk(clk_tb),
         .reset(reset_tb),
         .ex_mem_pcrsrc(ex_mem_pcrsrc_tb),
         .ex_mem_npc(ex_mem_npc_tb),
-        .IF_ID_instr(IF_ID_instr_tb),
-        .IF_ID_npc(IF_ID_npc_tb)
+        .IF_ID_instr(if_id_instr_tb),
+        .IF_ID_npc(if_id_npc_tb)
     );
 
     initial clk_tb = 0;

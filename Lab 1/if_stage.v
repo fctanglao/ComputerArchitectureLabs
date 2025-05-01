@@ -25,8 +25,8 @@ module if_stage(
     input  wire reset,
     input  wire ex_mem_pcrsrc,  
     input  wire [31:0] ex_mem_npc,     
-    output wire [31:0] IF_ID_npc,      
-    output wire [31:0] IF_ID_instr     
+    output wire [31:0] if_id_npc,      
+    output wire [31:0] if_id_instr     
     );
 
     wire [31:0] pc;         
@@ -34,37 +34,37 @@ module if_stage(
     wire [31:0] npc;        
     wire [31:0] instr;      
 
-    program_counter PC (
+    program_counter counter (
     .clk(clk),
     .reset(reset),
     .npc(npc),
     .pc(pc)
     );
 
-    adder add_pc(
+    adder addr(
     .pcin(pc),
     .pcout(pc_plus_1)
     );
 
-    mux my_mux(
+    mux_2x1_32bit mux(
     .a(ex_mem_npc),
     .b(pc_plus_1),
     .sel(ex_mem_pcrsrc),
     .y(npc)
     );
 
-    instruction_memory IM(
+    instruction_memory im(
     .addr(pc),
     .data(instr)
     );
 
-    if_id_latch IF_ID (
+    if_id_latch latch (
     .clk(clk),
     .reset(reset),
     .npc(npc),
     .instr(instr),
-    .npcout(IF_ID_npc),
-    .instrout(IF_ID_instr)
+    .npcout(if_id_npc),
+    .instrout(if_id_instr)
     );
 
 endmodule
