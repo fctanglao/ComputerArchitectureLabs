@@ -23,13 +23,13 @@
 module reg_file(
     input wire clk,
     input wire rst,
-    input wire regwrite,
+    input wire reg_write,
     input wire [4:0] rs,
     input wire [4:0] rt,
     input wire [4:0] rd,
-    input wire [31:0] writedata,
-    output reg [31:0] A_readdat1,
-    output reg [31:0] B_readdat2
+    input wire [31:0] write_data,
+    output reg [31:0] A_read_data_1,
+    output reg [31:0] B_read_data_2
     );
     
     reg [31:0] REG [0:31];
@@ -49,18 +49,18 @@ module reg_file(
     
     always @(posedge clk) begin
         if (rst) begin
-            A_readdat1 <= 32'h00000000;
-            B_readdat2 <= 32'h00000000;
+            A_read_data_1 <= 32'h00000000;
+            B_read_data_2 <= 32'h00000000;
         end
         else begin
-            if (regwrite) begin
+            if (reg_write) begin
                 if (rd != 5'b00000) begin
-                    REG[rd] <= writedata;
+                    REG[rd] <= write_data;
                 end
             end
             
-            A_readdat1 <= REG[rs];
-            B_readdat2 <= REG[rt];
+            A_read_data_1 <= REG[rs];
+            B_read_data_2 <= REG[rt];
         end
     end
 endmodule

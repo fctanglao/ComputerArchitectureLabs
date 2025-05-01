@@ -35,8 +35,8 @@ module decode_tb(
     wire [2:0]  id_ex_mem_tb;
     wire [3:0]  id_ex_execute_tb;
     wire [31:0] id_ex_npc_tb,
-                id_ex_readdat1_tb,
-                id_ex_readdat2_tb,
+                id_ex_read_data_1_tb,
+                id_ex_read_data_2_tb,
                 id_ex_sign_ext_tb;
     wire [4:0]  id_ex_instr_bits_20_16_tb,
                 id_ex_instr_bits_15_11_tb;
@@ -53,8 +53,8 @@ module decode_tb(
         .id_ex_mem(id_ex_mem_tb),
         .id_ex_execute(id_ex_execute_tb),
         .id_ex_npc(id_ex_npc_tb),
-        .id_ex_readdat1(id_ex_readdat1_tb),
-        .id_ex_readdat2(id_ex_readdat2_tb),
+        .id_ex_readdat1(id_ex_read_data_1_tb),
+        .id_ex_readdat2(id_ex_read_data_2_tb),
         .id_ex_sign_ext(id_ex_sign_ext_tb),
         .id_ex_instr_bits_20_16(id_ex_instr_bits_20_16_tb),
         .id_ex_instr_bits_15_11(id_ex_instr_bits_15_11_tb)
