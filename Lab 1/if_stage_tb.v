@@ -37,8 +37,8 @@ module if_stage_tb(
         .reset(reset_tb),
         .ex_mem_pcrsrc(ex_mem_pcrsrc_tb),
         .ex_mem_npc(ex_mem_npc_tb),
-        .IF_ID_instr(if_id_instr_tb),
-        .IF_ID_npc(if_id_npc_tb)
+        .if_id_instr(if_id_instr_tb),
+        .if_id_npc(if_id_npc_tb)
     );
 
     initial clk_tb = 0;
