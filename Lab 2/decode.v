@@ -57,13 +57,13 @@ module decode(
     reg_file rf0(
         .clk(clk),
         .rst(rst),
-        .regwrite(wb_reg_write),
+        .reg_write(wb_reg_write),
         .rs(rs),
         .rt(rt),
         .rd(wb_write_reg_location),
-        .writedata(mem_wb_write_data),
-        .A_readdat1(read_data_1_internal),
-        .B_readdat2(read_data_2_internal)
+        .write_data(mem_wb_write_data),
+        .A_read_data_1(read_data_1_internal),
+        .B_read_data_2(read_data_2_internal)
     );
     
     control c0(
@@ -82,8 +82,8 @@ module decode(
         .ctl_mem(mem_internal),
         .ctl_ex(ex_internal),
         .npc(if_id_npc),
-        .readdat1(read_data_1_internal),
-        .readdat2(read_data_2_internal),
+        .read_data_1(read_data_1_internal),
+        .read_data_2(read_data_2_internal),
         .sign_ext(sign_ext_internal),
         .instr_bits_20_16(rt),
         .instr_bits_15_11(rd),
@@ -91,8 +91,8 @@ module decode(
         .mem_out(id_ex_mem),
         .ctl_out(id_ex_execute),
         .npc_out(id_ex_npc),
-        .readdat1_out(id_ex_read_data_1),
-        .readdat2_out(id_ex_read_data_2),
+        .read_data_1_out(id_ex_read_data_1),
+        .read_data_2_out(id_ex_read_data_2),
         .sign_ext_out(id_ex_sign_ext),
         .instr_bits_20_16_out(id_ex_instr_bits_20_16),
         .instr_bits_15_11_out(id_ex_instr_bits_15_11)
