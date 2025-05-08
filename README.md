@@ -1,7 +1,7 @@
 # Computer Architecture Labs
 
 ## Lab Manual
-### Here is the [*lab manual*]() provided by Dr. Beverly Abadines Quon written by George M. Georgiou and Scott McWilliams from the Computer Science Department California State University, San Bernardino
+### Here is the [*lab manual*]() provided by Dr. Beverly Abadines Quon written by George M. Georgiou and Scott McWilliams from the Computer Science Department at California State University, San Bernardino
 
 
 ## Labs
