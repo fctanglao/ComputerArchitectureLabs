@@ -1,7 +1,8 @@
 # Computer Architecture Labs
 
 ## Lab Manual
-### Here is the [*lab manual*]() provided by Dr. Beverly Abadines Quon written by George M. Georgiou and Scott McWilliams
+### Here is the [*lab manual*]() provided by Dr. Beverly Abadines Quon written by George M. Georgiou and Scott McWilliams from the Computer Science Department California State University, San Bernardino
+
 
 ## Labs
 - ### Lab [*0*](): General Purpose Registers
