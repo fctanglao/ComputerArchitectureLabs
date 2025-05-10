@@ -80,7 +80,13 @@ module id_stage_tb(
     initial 
     begin
         clk = 0;
-        forever #1 clk = ~clk;
+        forever #5 clk = ~clk;
+    end
+    
+    initial
+    begin
+        $dumpfile("id_stage_tb.vcd");
+        $dumpvars(0, id_stage_tb);
     end 
     
     initial 
@@ -136,14 +142,12 @@ module id_stage_tb(
         instr_1511 = 5'b00000;
         
         #2
-
-        regwrite = 1;
+        
         id_npc = 32'h0000005;
+        regwrite = 1;
         
         #2
         
-        regwrite = 0;
-        id_npc = 32'h0000006;
         // 32'h00421020 = 32'b00000000010000100001000000100000
         opcode = 6'b000000;
         rs = 5'b00010;
@@ -151,6 +155,9 @@ module id_stage_tb(
         id_instr = 16'b0001000000100000;
         instr_2016 = 5'b00010;
         instr_1511 = 5'b00010;
+        id_npc = 32'h0000006;
+        regwrite = 0;
+        
         
         #2 
         #2
