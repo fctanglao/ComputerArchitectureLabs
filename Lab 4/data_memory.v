@@ -35,7 +35,7 @@ module data_memory(
     begin
         $readmemb("mem_instructions.txt", mem);
         for (integer i = 0; i < 6; i = i + 1)
-            $display("Memory[%0d] = %h", i, mem[i]);
+            $display(mem[i]);
     end
     
     always @(*) 
