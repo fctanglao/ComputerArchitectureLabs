@@ -6,7 +6,7 @@
 
 ## Labs
 - ### Lab [*0*](https://github.com/fctanglao/ComputerArchitectureLabs/tree/main/Lab%200): General Purpose Register
--     ### hi
+-  ### hi
 - ### Lab [*1*](https://github.com/fctanglao/ComputerArchitectureLabs/tree/main/Lab%201): The IF Pipeline Stage
 - ### Lab [*2*](https://github.com/fctanglao/ComputerArchitectureLabs/tree/main/Lab%202): The ID Pipeline Stage
 - ### Lab [*3*](https://github.com/fctanglao/ComputerArchitectureLabs/tree/main/Lab%203): The EX Pipeline Stage
