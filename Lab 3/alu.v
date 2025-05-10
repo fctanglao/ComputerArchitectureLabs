@@ -21,20 +21,21 @@
 
 
 module alu(
-    input [31:0] a,
-    input [31:0] b,
-    input [2:0] control,
-    output reg [31:0] result,
-    output zero
+    input wire [31:0] A,
+    input wire [31:0] B,
+    input wire [2:0] control,
+    output wire zero,
+    output reg [31:0] result
     );
     
-    always @(*) begin
+    always @(*) 
+    begin
         case(control)
-            3'b000: result = a & b;
-            3'b001: result = a | b;
-            3'b010: result = a + b;
-            3'b110: result = a - b;
-            3'b111: result = (a < b) ? 1 : 0;
+            3'b000: result = A & B;
+            3'b001: result = A | B;
+            3'b010: result = A + B;
+            3'b110: result = A - B;
+            3'b111: result = (A < B) ? 1 : 0;
             default: result = 32'bx;
         endcase
     end

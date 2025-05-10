@@ -21,11 +21,13 @@
 
 
 module mux_2x1_5bit(
-    input [4:0] a,
-    input [4:0] b,
-    input sel,
-    output [4:0] y
+    input wire [4:0] a,
+    input wire [4:0] b,
+    input wire sel,
+    output wire [4:0] y
     );
     
+    // bottom mux
     assign y = sel ? a : b;
+    
 endmodule

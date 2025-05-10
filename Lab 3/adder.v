@@ -21,11 +21,11 @@
 
 
 module adder(
-    input [31:0] a,
-    input [31:0] b,
-    output [31:0] result
+    input wire [31:0] add_in1,
+    input wire [31:0] add_in2,
+    output wire [31:0] add_out
     );
     
-    assign result = a + b;
+    assign add_out = add_in1 + add_in2;
     
 endmodule

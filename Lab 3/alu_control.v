@@ -21,16 +21,18 @@
 
 
 module alu_control(
-    input [1:0] alu_op,
-    input [5:0] funct,
+    input wire [5:0] funct,
+    input wire [1:0] alu_op,
     output reg [2:0] select
     );
     
-    always @(*) begin
+    always @(*) 
+    begin
         case(alu_op)
             2'b00: select = 3'b010;
             2'b01: select = 3'b110;
-            2'b10: begin
+            2'b10: 
+            begin
                 case(funct)
                     6'b100000: select = 3'b010;
                     6'b100010: select = 3'b110;
@@ -43,4 +45,5 @@ module alu_control(
             default: select = 3'bxxx;
         endcase
     end
+    
 endmodule

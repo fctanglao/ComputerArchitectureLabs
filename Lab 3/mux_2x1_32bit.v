@@ -21,11 +21,13 @@
 
 
 module mux_2x1_32bit(
-    input [31:0] a,
-    input [31:0] b,
-    input sel,
-    output [31:0] y
+    input wire [31:0] a,
+    input wire [31:0] b,
+    input wire sel,
+    output wire [31:0] y
     );
     
+    // alu mux
     assign y = sel ? a : b;
+    
 endmodule
