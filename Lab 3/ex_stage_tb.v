@@ -85,7 +85,7 @@ module ex_stage_tb(
         ex_ctlm_out = 3'b01;
         regdst = 1;
         aluop = 2'b10;
-        alusrc = 0;
+        alusrc = 1;
         add_in1 = 32'd100; 
         A = 32'd10; 
         ex_readdat2 = 32'd20; 
@@ -93,54 +93,18 @@ module ex_stage_tb(
         funct = 6'b100000;
         ex_b = 5'd5; 
         ex_a = 5'd10;
-        
-        $display("Time\tOP\tResult\tAdder\tReg");
-        $monitor("%0t\t%b\t%0d\t%0d\t%0d", $time, aluop, address, if_a, write_reg_in);
 
         #20;
         
-        aluop = 2'b10; 
-        funct = 6'b100010;
-        A = 32'd30; 
-        ex_readdat2 = 32'd15;
-        
-        #10;
-        
-        aluop = 2'b10; 
-        funct = 6'b100101;
-        A = 32'd12; 
-        ex_readdat2 = 32'd5;
-        
-        #10;
-        
-        aluop = 2'b10; 
-        funct = 6'b100100;
-        A = 32'd14; 
-        ex_readdat2 = 32'd7;
-        
-        #10;
-        
-        aluop = 2'b10; 
-        funct = 6'b101010;
-        A = 32'd8; 
-        ex_readdat2 = 32'd12;
-        
-        #10;
-        
-        aluop = 2'b00;
-        alusrc = 1;
-        A = 32'd100; 
-        add_in2 = 32'd20;
-        
-        #10;
-        
         regdst = 0;
-        ex_b = 5'd15; 
-        ex_a = 5'd25;
+        aluop = 2'b01;
+        alusrc = 0; 
+        funct = 6'b100010;
+        add_in2 = 32'd8;
         
-        #10;
+        #20;
         
-        $finish;
+        $stop;
     end
     
 endmodule
