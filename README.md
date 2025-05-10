@@ -10,4 +10,4 @@
 - ### Lab [*2*](https://github.com/fctanglao/ComputerArchitectureLabs/tree/main/Lab%202): The ID Pipeline Stage
 - ### Lab [*3*](https://github.com/fctanglao/ComputerArchitectureLabs/tree/main/Lab%203): The EX Pipeline Stage
 - ### Lab [*4*](https://github.com/fctanglao/ComputerArchitectureLabs/tree/main/Lab%204): The MEM Pipeline Stage
-- ### Lab [*5 & 6*](): The WB Pipeline Stage & MIPS Datapath (Final)
+- ### Lab [*5 & 6*](https://github.com/fctanglao/ComputerArchitectureLabs/tree/main/Labs%205%20%26%206): The WB Pipeline Stage & MIPS Datapath (Final)
