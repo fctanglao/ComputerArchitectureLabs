@@ -5,9 +5,9 @@
 
 
 ## Labs
-- ### Lab [*0*](): General Purpose Registers
-- ### Lab [*1*](): The IF Pipeline Stage
-- ### Lab [*2*](): The ID Pipeline Stage
-- ### Lab [*3*](): The EX Pipeline Stage
-- ### Lab [*4*](): The MEM Pipeline Stage
+- ### Lab [*0*](https://github.com/fctanglao/ComputerArchitectureLabs/tree/main/Lab%200): General Purpose Registers
+- ### Lab [*1*](https://github.com/fctanglao/ComputerArchitectureLabs/tree/main/Lab%201): The IF Pipeline Stage
+- ### Lab [*2*](https://github.com/fctanglao/ComputerArchitectureLabs/tree/main/Lab%202): The ID Pipeline Stage
+- ### Lab [*3*](https://github.com/fctanglao/ComputerArchitectureLabs/tree/main/Lab%203): The EX Pipeline Stage
+- ### Lab [*4*](https://github.com/fctanglao/ComputerArchitectureLabs/tree/main/Lab%204): The MEM Pipeline Stage
 - ### Lab [*5 & 6*](): The WB Pipeline Stage & MIPS Datapath (Final)
