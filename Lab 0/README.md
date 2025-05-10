@@ -1,3 +1,5 @@
+# Lab 0 - General Purpose Register
+
 ### You can find the code for the GPR [*here*](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%200/gpr.v)
 
 ### Testbench of GPR
