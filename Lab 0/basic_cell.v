@@ -24,11 +24,13 @@ module basic_cell(
     output reg q,
     input clr, clk,
     input [1:0] sel,
-    input [3:0] I
+    input [3:0] i
     );
     
+    // internal nets
     wire data;
     
+    // d flip-flop
     always @ (posedge clk or negedge clr)
     begin
         if (!clr)
@@ -37,6 +39,7 @@ module basic_cell(
             q <= data;
     end
     
-    assign data = I[sel];
+    // mux
+    assign data = i[sel];
 
 endmodule

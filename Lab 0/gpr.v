@@ -24,12 +24,24 @@ module gpr(
     output [3:0] q,
     input [1:0] sel,
     input [3:0] d,
-    input clr, clk, l_in, r_in
+    input clr, clk, l_in, r_in	
     );
     
+    /*
+    ----------------------------------
+    | sel |   operation   |
+    |-----|---------------|
+    | 00  | hold          |
+    | 01  | shift right   |
+    | 10  | shift left    |
+    | 11  | parallel load |
+    ----------------------------------
+    */
+    // instantiate 4 basic cells
+    
     basic_cell cell3 ( q[3], clr, clk, sel, { d[3], q[2], l_in, q[3] } ),
-                cell2 ( q[2], clk, clk, sel, { d[2], q[1], q[3], q[2] } ),
-                cell1 ( q[1], clk, clk, sel, { d[1], q[0], q[2], q[1] } ),
-                cell0 ( q[0], clk, clk, sel, { d[0], r_in, q[1], q[0] } );
+               cell2 ( q[2], clr, clk, sel, { d[2], q[1], q[3], q[2] } ),
+               cell1 ( q[1], clr, clk, sel, { d[1], q[0], q[2], q[1] } ),
+               cell0 ( q[0], clr, clk, sel, { d[0], r_in, q[1], q[0] } );
 
 endmodule
