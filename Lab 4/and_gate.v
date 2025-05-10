@@ -21,11 +21,11 @@
 
 
 module and_gate(
-    input wire m_ctl_out,
+    input wire m_ctlout,
     input wire zero,
-    output wire pc_src
+    output wire pcsrc
     );
     
-    assign pc_src = m_ctl_out & zero;
+    assign pcsrc = m_ctlout & zero;
     
 endmodule
