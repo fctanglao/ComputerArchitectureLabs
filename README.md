@@ -1,7 +1,7 @@
 # Computer Architecture Labs
 
 ## Lab Manual
-### Here is the [*lab manual*]() provided by Dr. Beverly Abadines Quon written by George M. Georgiou and Scott McWilliams from the Computer Science Department at California State University, San Bernardino
+### Here is the [*lab manual*](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Computer%20Architecture%20Implementing%20a%20Datapath%20in%20Verilog%20a%20Lab%20Manual.pdf) provided by Dr. Beverly Abadines Quon written by George M. Georgiou and Scott McWilliams from the Computer Science Department at California State University, San Bernardino
 
 
 ## Labs
