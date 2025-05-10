@@ -54,7 +54,8 @@ module if_stage_tb(
     initial clk = 0;
     always #1 clk = ~clk;
 
-    initial begin
+    initial 
+    begin
         reset = 1;
         pcsrc = 0;
         if_a = 32'hFFFFFFFF;
