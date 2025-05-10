@@ -22,45 +22,52 @@
 
 module reg_file(
     input wire clk,
-    input wire rst,
-    input wire reg_write,
+    input wire reset,
+    input wire regwrite,
     input wire [4:0] rs,
     input wire [4:0] rt,
     input wire [4:0] rd,
-    input wire [31:0] write_data,
-    output reg [31:0] A_read_data_1,
-    output reg [31:0] B_read_data_2
+    input wire [31:0] writedata,
+    output reg [31:0] A,
+    output reg [31:0] B
     );
     
-    reg [31:0] REG [0:31];
+    reg [31:0] gpr[0:31];
 
-    initial begin
-        REG[0] = 32'h002300AA;
-        REG[1] = 32'h10654321;
-        REG[2] = 32'h00100022;
-        REG[3] = 32'h8C123456;
-        REG[4] = 32'h8F123456;
-        REG[5] = 32'hAD654321;
-        REG[6] = 32'h60000066;
-        REG[7] = 32'h13012345;
-        REG[8] = 32'hAC654321;
-        REG[9] = 32'h12012345;
+    initial 
+    begin
+        gpr[0] = 32'h002300AA;
+        gpr[1] = 32'h10654321;
+        gpr[2] = 32'h00100022;
+        gpr[3] = 32'h8C123456;
+        gpr[4] = 32'h8F123456;
+        gpr[5] = 32'hAD654321;
+        gpr[6] = 32'h60000066;
+        gpr[7] = 32'h13012345;
+        gpr[8] = 32'hAC654321;
+        gpr[9] = 32'h12012345;
     end
     
-    always @(posedge clk) begin
-        if (rst) begin
-            A_read_data_1 <= 32'h00000000;
-            B_read_data_2 <= 32'h00000000;
+    always @(posedge clk) 
+    begin
+        if (reset) 
+        begin
+            A <= 32'h00000000;
+            B <= 32'h00000000;
         end
-        else begin
-            if (reg_write) begin
-                if (rd != 5'b00000) begin
-                    REG[rd] <= write_data;
+        else 
+        begin
+            if (regwrite) 
+            begin
+                if (rd != 5'b00000) 
+                begin
+                    gpr[rd] <= writedata;
                 end
             end
             
-            A_read_data_1 <= REG[rs];
-            B_read_data_2 <= REG[rt];
+            A <= gpr[rs];
+            B <= gpr[rt];
         end
     end
+    
 endmodule
