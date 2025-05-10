@@ -10,5 +10,4 @@
 - ### Lab [*2*](): The ID Pipeline Stage
 - ### Lab [*3*](): The EX Pipeline Stage
 - ### Lab [*4*](): The MEM Pipeline Stage
-- ### Lab [*5*](): The WB Pipeline Stage
-- ### Lab [*6*](): The MIPS Datapath (Final)
+- ### Lab [*5 & 6*](): The WB Pipeline Stage & MIPS Datapath (Final)
