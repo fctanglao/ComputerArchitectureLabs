@@ -38,21 +38,24 @@ module if_stage_tb(
     wire [4:0] instr_1511;     
 
     if_stage dut(
-        .clk(clk),
-        .reset(reset),
-        .pcsrc(pcsrc),
-        .if_a(if_a),
-        .id_npc(id_npc),
-        .opcode(opcode),
-        .rs(rs),
-        .rt(rt),
-        .id_instr(id_instr),
-        .instr_2016(instr_2016),
-        .instr_1511(instr_1511)
+    .clk(clk),
+    .reset(reset),
+    .pcsrc(pcsrc),
+    .if_a(if_a),
+    .id_npc(id_npc),
+    .opcode(opcode),
+    .rs(rs),
+    .rt(rt),
+    .id_instr(id_instr),
+    .instr_2016(instr_2016),
+    .instr_1511(instr_1511)
     );
 
-    initial clk = 0;
-    always #1 clk = ~clk;
+    initial 
+    begin
+        clk = 0;
+        forever #5 clk = ~clk;
+    end
 
     initial 
     begin
