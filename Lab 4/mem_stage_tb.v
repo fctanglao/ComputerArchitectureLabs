@@ -41,20 +41,20 @@ module mem_stage_tb(
     wire [4:0] rd;
     
     mem_stage uut (
-        .clk(clk),
-        .control_wb_in(control_wb_in),
-        .memread(memread),
-        .memwrite(memwrite),
-        .branch(branch),
-        .zero(zero),
-        .address(address),
-        .write_data(write_data),
-        .write_reg_in(write_reg_in),
-        .regwrite(regwrite),
-        .memtoreg(memtoreg),
-        .read_data(read_data),
-        .mem_alu_result(mem_alu_result),
-        .rd(rd)
+    .clk(clk),
+    .control_wb_in(control_wb_in),
+    .memread(memread),
+    .memwrite(memwrite),
+    .branch(branch),
+    .zero(zero),
+    .address(address),
+    .write_data(write_data),
+    .write_reg_in(write_reg_in),
+    .regwrite(regwrite),
+    .memtoreg(memtoreg),
+    .read_data(read_data),
+    .mem_alu_result(mem_alu_result),
+    .rd(rd)
     );
     
     initial 
