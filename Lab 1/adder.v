@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 03/20/2025 04:41:25 PM
+// Create Date: 03/20/2025 04:23:15 PM
 // Design Name: 
-// Module Name: program_counter
+// Module Name: adder
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,23 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module program_counter(
-    input  wire clk,
-    input  wire reset,
-    input  wire [31:0] npc,
-    output reg  [31:0] pc 
+module adder(
+    input wire [31:0] pcin,
+    output wire [31:0] pcout
     );
     
-    always @(posedge clk or posedge reset) 
-    begin
-        if (reset) 
-        begin
-            pc <= 32'h0;
-        end 
-        else 
-        begin
-            pc <= npc;
-        end
-    end
-    
+    assign pcout = pcin + 1;
+
 endmodule

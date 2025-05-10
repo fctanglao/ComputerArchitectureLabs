@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 03/20/2025 04:41:25 PM
+// Create Date: 04/24/2025 04:14:02 PM
 // Design Name: 
-// Module Name: program_counter
+// Module Name: mux_2x1_32bit
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,23 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module program_counter(
-    input  wire clk,
-    input  wire reset,
-    input  wire [31:0] npc,
-    output reg  [31:0] pc 
+module mux_2x1_32bit(
+    input wire [31:0] a, 
+    input wire [31:0] b,
+    input wire sel,
+    output wire [31:0] y
     );
     
-    always @(posedge clk or posedge reset) 
-    begin
-        if (reset) 
-        begin
-            pc <= 32'h0;
-        end 
-        else 
-        begin
-            pc <= npc;
-        end
-    end
+    assign y = sel ? a : b;
     
 endmodule
