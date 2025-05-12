@@ -4,6 +4,8 @@
 ## Overview
 ### Purpose
 - Select between the memory read data and the ALU result using the MemtoReg MUX
+- Write the selected value back into the register file at the destination register
+- Complete the instruction’s execution and make the new register value available for following instructions
 ### Components
 - [**Multiplexer (MUX)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mux_2x1_32bit.v)**:**
 ### Connections
