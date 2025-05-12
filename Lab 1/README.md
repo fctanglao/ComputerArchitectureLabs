@@ -7,7 +7,7 @@
 - Select between the sequential PC+4 and a branch target (via the PCSrc mux) for the next PC
 - Latch the fetched instruction and PC+4 into the IF/ID pipeline register for the next stage
 ### Components
-- **Program Counter [(program_counter)](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/program_counter.v):** Holds the 32-bit address of the instruction to fetch
+- [**Program Counter**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/program_counter.v)**:** Holds the 32-bit address of the instruction to fetch
 - **Instruction Memory [instruction_memory](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/instruction_memory.v):** A 128×32-bit read-only memory storing the program’s instructions
 - **2x1 32-Bit Mux [mux_2x1_32bit](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/mux_2x1_32bit.v):** A 32-bit adder that adds the constant 4 to the current PC to compute the address of the next sequential instruction (PC+4)
 - **Adder [adder](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/adder.v):** A 2-to-1 selector that chooses between the adder’s PC + 4 output and a branch-target address
