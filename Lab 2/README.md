@@ -19,7 +19,17 @@
 - Control Unit generates and pipelines control signals to other stages
 - Register File latches the contents in the source registers to the ID/EX pipeline register
 ### Expected Inputs & Outputs
-- Register write 
+- Inputs
+  - Register write enable
+  - IF/ID next-PC (NPC)
+  - IF/ID instruction (IR)
+  - Write register address
+  - Write data
+- Outputs
+  - Control signals
+  - Read data 1 & 2
+  - Extended immediate
+  - Function code
 
 ## Code
 ### Block diagram for the ID stage
