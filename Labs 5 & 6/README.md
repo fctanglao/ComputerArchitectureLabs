@@ -18,7 +18,7 @@
 ### ![Block diagram](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/wb%20stage%20block%20diagram.png)
 ### You can find the code for the WB stage [*here*](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/wb_stage.v)
 
-### Note: We test the WB stage in [Lab 6](#lab-6---testing-the-mips-datapath-(final-project)) below
+### Note: We test the WB stage in [Lab 6](#lab-6---testing-the-mips-datapath-final-project) below
 # Lab 6 - Testing the MIPS Datapath (Final Project)
 
 ## Overview
