@@ -13,11 +13,12 @@
 - [**Adder**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/adder.v)**:** Adds 4 to the current PC to compute the address of the next sequential instruction
 - [**IF/ID Pipeline Register (Latch)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/if_id_latch.v)**:** Stores the NPC and IR for the next stage
 ### Connections
-- PC is connected to the instruction memory
-- PC is connected to the adder
-- Instruction Memory is connected to the IF/ID latch
-- MUX is connected to the PC as the NPC
-- Adder is connected to the MUX and IF/ID latch
+- PC feeds the address input of the instruction memory
+- PC feeds the adder to compute PC + 4
+- Instruction Memory latches fetched instruction into the IF/ID pipeline register
+- MUX writes selected NPC back into the PC
+- Adder feeds PC + 4 into the MUX
+- Adder latches PC + 4 into the IF/ID pipeline register
 ### Expected Inputs & Outputs
 - PCSrc select signal from the EX/MEM latch
 - Branch target address from the EX/MEM latch
