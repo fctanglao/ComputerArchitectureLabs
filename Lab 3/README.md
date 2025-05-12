@@ -17,7 +17,8 @@
 ### Connections
 - 
 ### Expected Inputs & Outputs
-- 
+- Inputs
+- Outputs
 
 ## Code
 ### Block diagram for the EX stage
