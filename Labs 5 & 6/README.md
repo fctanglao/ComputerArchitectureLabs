@@ -1,4 +1,4 @@
-# Lab 5 - The Write-Back (WB) Stage and Lab 6 - MIPS Datapath
+# Lab 5 - The Write-Back (WB) Stage and Lab 6 - Testing the MIPS Datapath (Final Project)
 
 ## Lab 5
 ## Overview
