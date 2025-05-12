@@ -1,4 +1,4 @@
-# Lab 3 - The EX Stage (Execute)
+# Lab 3 - The Execute (EX) Stage
 
 ## Overview
 - ### Purpose
