@@ -21,11 +21,11 @@
 - ### Purpose
   - 
 - ### Components
-  - [**IF Stage**]()**:**
-  - [**ID Stage**]()**:**
-  - [**EX Stage**]()**:**
-  - [**MEM Stage**]()**:**
-  - [**WB Stage**]()**:**
+  - [**IF Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/if_stage.v)**:**
+  - [**ID Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/id_stage.v)**:**
+  - [**EX Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/ex_stage.v)**:**
+  - [**MEM Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mem_stage.v)**:**
+  - [**WB Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/wb_stage.v)**:**
 - ### Expected Inputs & Outputs
   - 
 
