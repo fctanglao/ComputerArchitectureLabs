@@ -14,7 +14,7 @@
 ## Code
 ### Block diagram for the WB stage
 ### ![Block diagram](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/wb%20stage%20block%20diagram.png)
-### You can find the code for the WB stage [*here*]()
+### You can find the code for the WB stage [*here*](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/wb_stage.v)
 
 ## Lab 6
 ## Overview
@@ -32,12 +32,13 @@
 ## Code
 ### Block diagram for the MIPS datapath
 ### ![Block diagram](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mips%20datapath%20block%20diagram.png)
-### You can find the code for the MIPS datapath [*here*]()
+### You can find the code for the MIPS datapath [*here*](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mips_datapath.v)
 
 ## Screenshot
 ### Testbench for the MIPS datapath
-### ![Testbench]()
-### You can find the code for the MIPS datapath testbench [*here*]()
+### ![Testbench](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mips%20datapath%20testbench.png)
+### ![Tcl console](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mips%20datapath%20tcl%20console%20output.png)
+### You can find the code for the MIPS datapath testbench [*here*](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mips_datapath_tb.v)
 
 ## Conclusion
 ### Protection Against Hazards
