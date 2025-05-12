@@ -2,14 +2,14 @@
 
 ## Lab 5
 ## Overview
-- ### Purpose
-  - 
-- ### Components
-  - [**Multiplexer (MUX)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mux_2x1_32bit.v)**:**
-- ### Connections
-  - 
-- ### Expected Inputs & Outputs
-  - 
+### Purpose
+- 
+### Components
+- [**Multiplexer (MUX)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mux_2x1_32bit.v)**:**
+### Connections
+- 
+### Expected Inputs & Outputs
+- 
 
 ## Code
 ### Block diagram for the WB stage
@@ -18,16 +18,16 @@
 
 ## Lab 6
 ## Overview
-- ### Purpose
-  - 
-- ### Components
-  - [**IF Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/if_stage.v)**:**
-  - [**ID Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/id_stage.v)**:**
-  - [**EX Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/ex_stage.v)**:**
-  - [**MEM Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mem_stage.v)**:**
-  - [**WB Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/wb_stage.v)**:**
-- ### Expected Inputs & Outputs
-  - 
+### Purpose
+- 
+### Components
+- [**IF Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/if_stage.v)**:**
+- [**ID Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/id_stage.v)**:**
+- [**EX Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/ex_stage.v)**:**
+- [**MEM Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mem_stage.v)**:**
+- [**WB Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/wb_stage.v)**:**
+### Expected Inputs & Outputs
+- 
 
 ## Code
 ### Block diagram for the MIPS datapath
@@ -40,9 +40,9 @@
 ### You can find the code for the MIPS datapath testbench [*here*]()
 
 ## Conclusion
-- ### Protection Against Hazards
-  -   
-- ### Instruction Reordering
-  - 
-- ### WT and/or WB Improvements
-  - 
+### Protection Against Hazards
+-   
+### Instruction Reordering
+- 
+### WT and/or WB Improvements
+- 
