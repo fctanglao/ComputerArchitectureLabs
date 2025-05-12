@@ -1,6 +1,5 @@
-# Lab 5 - The Write-Back (WB) Stage and Lab 6 - Testing the MIPS Datapath (Final Project)
+# Lab 5 - The Write-Back (WB) Stage
 
-## Lab 5
 ## Overview
 ### Purpose
 - Select between the memory read data and the ALU result using the MemtoReg MUX
@@ -19,7 +18,8 @@
 ### ![Block diagram](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/wb%20stage%20block%20diagram.png)
 ### You can find the code for the WB stage [*here*](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/wb_stage.v)
 
-## Lab 6
+# Lab 6 - Testing the MIPS Datapath (Final Project)
+
 ## Overview
 ### Purpose
 - 
