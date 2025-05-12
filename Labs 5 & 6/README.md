@@ -1,4 +1,4 @@
-# Labs 5 & 6 - The Write-Back (WB) Stage and MIPS Datapath
+# Lab 5 - The Write-Back (WB) Stage and Lab 6 - MIPS Datapath
 
 ## Lab 5
 ## Overview
@@ -11,7 +11,8 @@
 ### Connections
 - 
 ### Expected Inputs & Outputs
-- 
+- Inputs
+- Outputs
 
 ## Code
 ### Block diagram for the WB stage
@@ -31,7 +32,8 @@
 ### Connections
 - 
 ### Expected Inputs & Outputs
-- 
+- Inputs
+- Outputs
 
 ## Code
 ### Block diagram for the MIPS datapath
