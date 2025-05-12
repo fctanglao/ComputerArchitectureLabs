@@ -9,7 +9,7 @@
 ### Components
 - [**Program Counter (PC)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/program_counter.v)**:** Holds the address of the program instruction
 - [**Instruction Memory**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/instruction_memory.v)**:** Stores the program instruction
-- [**Multiplexer (MUX)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/mux_2x1_32bit.v)**:** Chooses between PC + 4 and a branch target address
+- [**Multiplexer (MUX)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/mux_2x1_32bit.v)**:** Chooses between PC + 4 and the branch target address
 - [**Adder**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/adder.v)**:** Adds 4 to the current PC to compute the address of the next sequential instruction
 - [**IF/ID Pipeline Register (Latch)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/if_id_latch.v)**:** Stores the NPC and IR
 ### Connections
