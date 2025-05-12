@@ -6,7 +6,7 @@
   - Compute the branch target address by adding the sign-extended immediate to the PC + 4
   - Select between the second register operand and the immediate via the ALUSrc MUX
   - Choose the write-back destination register vis the RegDst MUX
-  - Latch the ALU result, zero flag, branch target, and control signals into the EX/MEM Latch
+  - Latch the ALU result, zero flag, branch target, and control signals into the EX/MEM latch
 - ### Components
   - [**5-Bit Multiplexer (MUX)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/mux_2x1_5bit.v)**:**
   - [**32-Bit Multiplexer (MUX)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/mux_2x1_32bit.v)**:**
