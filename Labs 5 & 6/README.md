@@ -21,7 +21,11 @@
 - ### Purpose
   - 
 - ### Components
-  - 
+  - [**IF Stage**]()**:**
+  - [**ID Stage**]()**:**
+  - [**EX Stage**]()**:**
+  - [**MEM Stage**]()**:**
+  - [**WB Stage**]()**:**
 - ### Expected Inputs & Outputs
   - 
 
