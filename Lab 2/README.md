@@ -1,4 +1,4 @@
-# Lab 2 - The ID Stage (Instruction Decode)
+# Lab 2 - The Instruction Decode (ID) Stage
 
 ## Overview
 ### Purpose
