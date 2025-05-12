@@ -5,7 +5,7 @@
 - ### Purpose
   - 
 - ### Components
-  - 
+  - [**Multiplexer (MUX)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mux_2x1_32bit.v)**:**
 - ### Expected Inputs & Outputs
 
 ## Code
