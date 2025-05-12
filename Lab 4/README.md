@@ -6,11 +6,11 @@
   - For loads, capture the data read from memory
   - For stores, write the register data to memory
   - Evaluate branch decisions by combining the zero flag with the branch control signal to drive PCSrc
-  - Pass along the memory data and control bits via the MEM/WB pipeline register
+  - Pass along the memory data and control bits via the MEM/WB latch
 - ### Components
   - [**AND Gate**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%204/and_gate.v)**:**
   - [**Data Memory**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%204/data_memory.v)**:**
-  - [**MEM/WB Pipeline Register (Latch)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%204/mem_wb_latch.v)**:**
+  - [**MEM/WB Latch**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%204/mem_wb_latch.v)**:**
 - ### Connections
   - 
 - ### Expected Inputs & Outputs
