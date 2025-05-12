@@ -1,9 +1,17 @@
-# Lab 4 - The MEM Stage
+# Lab 4 - The MEM Stage (Memory Access)
 
 ## Overview
 - ### Purpose
-  - 
+  - Use the ALU result as the address to read from or write to data memory
+  - For loads, capture the data read from memory
+  - For stores, write the register data to memory
+  - Evaluate branch decisions by combining the zero flag with the branch control signal to drive PCSrc
+  - Pass along the memory data and control bits via the MEM/WB pipeline register
 - ### Components
+  - [**AND Gate**]()**:**
+  - [**Data Memory**]()**:**
+  - [**MEM/WB Pipeline Register (Latch)**]()**:**
+- ### Connections
   - 
 - ### Expected Inputs & Outputs
   - 
