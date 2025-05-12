@@ -11,7 +11,7 @@
 - [**Instruction Memory**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/instruction_memory.v)**:** A 128×32-bit read-only memory storing the program’s instructions
 - [**2x1 32-Bit Mux**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/mux_2x1_32bit.v)**:** A 32-bit adder that adds the constant 4 to the current PC to compute the address of the next sequential instruction (PC+4)
 - [**Adder**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/adder.v)**:** A 2-to-1 selector that chooses between the adder’s PC + 4 output and a branch-target address
-- [**IF/ID Latch**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/if_id_latch.v)**:** An edge-triggered latch capturing and holding two 32-bit values at the end of the IF stage (The fetched instruction and the PC + 4 value)
+- [**IF/ID Latch**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%201/if_id_latch.v)**:** An edge-triggered latch capturing and holding two 32-bit values at the end of the IF stage
 ### Connections
 - 
 ### Expected Inputs & Outputs
