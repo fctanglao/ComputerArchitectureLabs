@@ -1,12 +1,21 @@
 # Lab 1 - The IF Stage
 
 ## Overview
-- ### Purpose
-  - 
-- ### Components
-  - 
-- ### Expected Inputs & Outputs
-  - 
+### Purpose
+- Retrieve the 32-bit instruction from instruction memory using the current PC
+- Increment the PC by 4 to compute the next sequential address
+- Select between the sequential PC+4 and a branch target (via the PCSrc mux) for the next PC
+- Latch the fetched instruction and PC+4 into the IF/ID pipeline register for the next stage
+### Components
+- **Program Counter:**
+- **Instruction Memory:**
+- **2x1 32-Bit Mux:**
+- **Adder:**
+- **IF/ID Latch:**
+### Connections
+- 
+### Expected Inputs & Outputs
+- 
 
 ## Code
 ### Block diagram for the IF stage
