@@ -3,7 +3,7 @@
 ## Lab 5
 ## Overview
 ### Purpose
-- 
+- Select between the memory read data and the ALU result using the MemtoReg MUX
 ### Components
 - [**Multiplexer (MUX)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mux_2x1_32bit.v)**:**
 ### Connections
