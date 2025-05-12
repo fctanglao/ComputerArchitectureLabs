@@ -25,7 +25,7 @@
   - Branch target address from the EX/MEM latch
 - Outputs
   - PC + 4 (NPC)
-  - Fetched instructions (IR)
+  - Fetched instruction (IR)
 
 ## Code
 ### Block diagram for the IF stage
