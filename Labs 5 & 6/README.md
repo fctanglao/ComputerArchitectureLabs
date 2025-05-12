@@ -37,6 +37,7 @@
 ## Screenshot
 ### Testbench for the MIPS datapath
 ### ![Testbench](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mips%20datapath%20testbench.png)
+### Tcl console output for the MIPS datapath
 ### ![Tcl console](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mips%20datapath%20tcl%20console%20output.png)
 ### You can find the code for the MIPS datapath testbench [*here*](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mips_datapath_tb.v)
 
