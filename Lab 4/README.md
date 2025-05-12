@@ -1,4 +1,4 @@
-# Lab 4 - The MEM Stage (Memory Access)
+# Lab 4 - The Memory Access (MEM) Stage 
 
 ## Overview
 - ### Purpose
