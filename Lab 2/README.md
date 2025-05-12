@@ -2,16 +2,16 @@
 
 ## Overview
 ### Purpose
-- ### Decode opcode and fields from the fetched instruction
-- ### Read source operands from the register file
-- ### Generate control signals based on the opcode via the control unit
-- ### Sign-extend the 16-bit immediate field to 32 bits for ALU operations
-- ### Latch decoded values, operands, immediates, and control bits into the ID/EX pipeline register
+- Decode opcode and fields from the fetched instruction
+- Read source operands from the register file
+- Generate control signals based on the opcode via the control unit
+- Sign-extend the 16-bit immediate field to 32 bits for ALU operations
+- Latch decoded values, operands, immediates, and control bits into the ID/EX pipeline register
 ### Components
-- ### [**Sign Extend Unit**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%202/sign_extend.v)**:** Extends 16-bit immediate to 32 bits
-- ### [**Control Unit**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%202/control.v)**:** Generates WB, M. and EX control signals used in other stages
-- ### [**Register File**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%202/reg_file.v)**:** Reads and outputs register values
-- ### [**ID/EX Pipeline Register (Latch)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%202/id_ex_latch.v)**:** Passes decoded information to the next stage
+- [**Sign Extend Unit**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%202/sign_extend.v)**:** Extends 16-bit immediate to 32 bits
+- [**Control Unit**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%202/control.v)**:** Generates WB, M. and EX control signals used in other stages
+- [**Register File**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%202/reg_file.v)**:** Reads and outputs register values
+- [**ID/EX Pipeline Register (Latch)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%202/id_ex_latch.v)**:** Passes decoded information to the next stage
 ### Connections
 - IF/ID instruction bits (IR) are decoded to provide the opcode, source registers, and immmediate field
 - IF/ID next-PC value (NPC) is forwarded to the next stage
