@@ -1,4 +1,4 @@
-# Lab 1 - The IF Stage
+# Lab 1 - The IF Stage (Instruction Fetch)
 
 ## Overview
 ### Purpose
