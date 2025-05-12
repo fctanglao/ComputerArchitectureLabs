@@ -20,8 +20,9 @@
 - Adder feeds PC + 4 into the MUX
 - Adder latches PC + 4 into the IF/ID pipeline register
 ### Expected Inputs & Outputs
-- PCSrc select signal from the EX/MEM latch
-- Branch target address from the EX/MEM latch
+- Inputs
+-   PCSrc select signal from the EX/MEM latch
+-   Branch target address from the EX/MEM latch
 - PC + 4 (NPC)
 - Fetched instructions (IR)
 
