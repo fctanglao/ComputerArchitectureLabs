@@ -6,14 +6,14 @@
   - Compute the branch target address by adding the sign-extended immediate to the PC + 4
   - Select between the second register operand and the immediate via the ALUSrc MUX
   - Choose the write-back destination register vis the RegDst MUX
-  - Latch the ALU result, zero flag, branch target, and control signals into the EX/MEM pipeline register
+  - Latch the ALU result, zero flag, branch target, and control signals into the EX/MEM Latch
 - ### Components
   - [**5-Bit Multiplexer (MUX)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/mux_2x1_5bit.v)**:**
   - [**32-Bit Multiplexer (MUX)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/mux_2x1_32bit.v)**:**
-  - [**ALU Control**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/alu_control.v)**:**
+  - [**ALU Control Unit**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/alu_control.v)**:**
   - [**ALU**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/alu.v)**:**
   - [**Adder**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/adder.v)**:**
-  - [**EX/MEM Pipeline Register (Latch)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/ex_mem_latch.v)**:**
+  - [**EX/MEM Latch**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/ex_mem_latch.v)**:**
 - ### Connections
   - 
 - ### Expected Inputs & Outputs
