@@ -21,10 +21,11 @@
 - Adder latches PC + 4 into the IF/ID pipeline register
 ### Expected Inputs & Outputs
 - Inputs
--   PCSrc select signal from the EX/MEM latch
--   Branch target address from the EX/MEM latch
-- PC + 4 (NPC)
-- Fetched instructions (IR)
+  - PCSrc select signal from the EX/MEM latch
+  - Branch target address from the EX/MEM latch
+- Outputs
+  - PC + 4 (NPC)
+  - Fetched instructions (IR)
 
 ## Code
 ### Block diagram for the IF stage
