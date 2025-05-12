@@ -15,7 +15,7 @@
 ### Connections
 - PC feeds the address input of the instruction memory
 - PC feeds the adder to compute PC + 4
-- Instruction Memory latches fetched instruction into the IF/ID latch
+- Instruction memory latches fetched instruction into the IF/ID latch
 - MUX writes selected NPC back into the PC
 - Adder feeds PC + 4 into the MUX
 - Adder latches PC + 4 into the IF/ID latch
