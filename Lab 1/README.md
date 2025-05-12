@@ -19,7 +19,6 @@
 - MUX is connected to the PC as the NPC
 - Adder is connected to the MUX and IF/ID latch
 ### Expected Inputs & Outputs
-  Inputs
 - PCSrc select signal from the EX/MEM latch
 - Branch-target address from the EX/MEM latch
 - PC + 4 (NPC)
