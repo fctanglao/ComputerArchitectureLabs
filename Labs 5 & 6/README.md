@@ -1,4 +1,4 @@
-# Labs 5 & 6 - The Write-BAck (WB) Stage and MIPS Datapath
+# Labs 5 & 6 - The Write-Back (WB) Stage and MIPS Datapath
 
 ## Lab 5
 ## Overview
