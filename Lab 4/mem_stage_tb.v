@@ -94,10 +94,4 @@ module mem_stage_tb(
         $finish;
     end
     
-    initial 
-    begin
-        $monitor("Time=%0t | Memory Read=%b, Memory Write=%b, Branch=%b | Read Data=%h, Address=%h",
-                $time, memread, memwrite, branch, read_data, address);
-    end
-    
 endmodule

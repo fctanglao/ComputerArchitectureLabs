@@ -29,7 +29,7 @@ module data_memory(
     output reg [31:0] read_data
     );
     
-    reg [31:0] mem [0:255];
+    reg [31:0] mem[0:255];
     
     initial 
     begin
