@@ -19,13 +19,13 @@
 - Control unit generates and pipelines control signals to other stages
 - Register file latches the contents in the source registers to the ID/EX latch
 ### Expected Inputs & Outputs
-- Inputs
+- **Inputs**
   - Register write enable from the MEM/WB latch
   - IF/ID next-PC (NPC)
   - IF/ID instruction (IR)
   - Write register address from the MEM/WB latch
   - Write data from the WB stage
-- Outputs
+- **Outputs**
   - Control signals (WB, M, RegDst, ALUOp, ALUSrc)
   - ID/EX next-PC (NPC)
   - Register read data 1 & 2
