@@ -28,7 +28,7 @@
 - Outputs
   - Control signals
   - Read data 1 & 2
-  - Extended immediate
+  - Sign-extended immediate
   - Function code
 
 ## Code
