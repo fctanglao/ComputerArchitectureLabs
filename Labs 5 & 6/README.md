@@ -78,5 +78,10 @@
   -  Add a scoreboard/reservation stations and a reorder buffer (ROB) so the core can issue instructions out of order and retire them in order
 ### WT and/or WB Improvements
 - **Hide Main‑Memory Latency on Stores**
+  - Insert a write buffer (FIFO) after the D‑cache so the MEM stage can finish once data are queued, letting later instructions proceed while the store drains to memory
 - **Cut Memory‑Bus Traffic**
+  - Change the D‑cache policy to write‑back and dirty bit
+  - Only dirty lines are written on eviction
+  - Clean stores are absorbed by the cache
 - **Keep Single‑Cycle Writes Visible to Following Loads**
+  - On a write‑through design, keep (or extend) the same write buffer, but snoop upcoming load addresses so a load can bypass the buffer if it targets a just‑stored word
