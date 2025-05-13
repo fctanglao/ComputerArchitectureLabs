@@ -77,4 +77,6 @@
 - **Hardware**
   -  Add a scoreboard/reservation stations and a reorder buffer (ROB) so the core can issue instructions out of order and retire them in order
 ### WT and/or WB Improvements
-- 
+- **Hide Main‑Memory Latency on Stores**
+- **Cut Memory‑Bus Traffic**
+- **Keep Single‑Cycle Writes Visible to Following Loads**
