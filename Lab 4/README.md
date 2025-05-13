@@ -21,7 +21,8 @@
   - ALU result
   - Register read data 2
 - Outputs
-  - Control signals (WB)
+  - PCSrc select signal
+  - Control signals (RegWrite, MemtoReg)
   - Data memory read data
   - ALU result
   - Write register address
