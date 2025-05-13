@@ -61,9 +61,16 @@
   - Make the register file “two‑phase” (writes in the first half‑cycle, reads in the second) so a write‑back can overlap the very next decode
     - Clock‑split reg‑file: still in ID, but controlled by φ1/φ2
 - **Data**
-  -   
+  - Forwarding network so ALU results are used as soon as they are produced
+    - Three 2‑bit ForwardA/ForwardB multiplexers added in EX
+    - Wires from EX/MEM and MEM/WB back to those muxes (see mini diagram below)
+  - Hazard‑detection unit to stall on a load‑use pair when the value cannot yet be forwarded
+    - HazardDetect combinational block in ID that can freeze IF/ID + insert a bubble into ID/EX
 - **Control**
-  -   
+    - Move branch compare and target‑adder from EX to ID so most branches resolve in 1 cycle instead of 3 cycles
+      - ID‑stage ALU (simple subtract/zero) and branch‑target adder feeding a PCSrc MUX
+    - Static “predict‑not‑taken” (free) or add a 1‑bit/2‑bit BHT + BTB to make mispredictions rare
+      - Optional Branch Target Buffer (small CAM) between IF and PC update logic
 ### Instruction Reordering
 - **Compiler**
   - 
