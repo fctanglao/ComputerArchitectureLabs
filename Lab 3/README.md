@@ -18,13 +18,13 @@
 - 
 ### Expected Inputs & Outputs
 - Inputs
-  - Control signals
+  - Control signals (WB, M, RegDst, ALUOp, ALUSrc)
   - ID/EX next-PC (NPC)
   - Register read data 1 & 2
   - Sign-extended immediate
   - Function code
 - Outputs
-  - Control signals
+  - Control signals (WB, MemRead, MemWrite, Branch)
   - Branch target address
   - ALU zero flag
   - ALU result
