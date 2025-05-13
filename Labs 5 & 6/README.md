@@ -54,6 +54,7 @@
 
 ## Conclusion
 ### Protection Against Hazards
+### ![Block diagram](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/improving%20pipeline%20against%20hazards.png)
 - **Structural**
   - Give IF and MEM their own memories (or L1 caches) so a load/store no longer collides with an instruction fetch
     - I‑cache: next to the PC/IF MUX
@@ -72,11 +73,13 @@
     - Static “predict‑not‑taken” (free) or add a 1‑bit/2‑bit BHT and BTB to make mispredictions rare
       - Optional branch target buffer (small CAM) between IF and PC update logic
 ### Instruction Reordering
+### ![Block diagram](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/instruction%20reordering.png)
 - **Compiler**
   -  Let the compiler reorder independent instructions or unroll loops so that a value produced by a LW is not consumed in the very next cycle
 - **Hardware**
   -  Add a scoreboard/reservation stations and a reorder buffer (ROB) so the core can issue instructions out of order and retire them in order
 ### WT and/or WB Improvements
+### ![Block diagram](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/wt%20and%20wb%20improvements.png)
 - **Hide Main‑Memory Latency on Stores**
   - Insert a write buffer (FIFO) after the D‑cache so the MEM stage can finish once data are queued, letting later instructions proceed while the store drains to memory
   - Between D‑cache and memory bus (inside MEM stage)
