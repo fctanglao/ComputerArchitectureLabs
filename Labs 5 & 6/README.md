@@ -10,12 +10,12 @@
 ### Connections
 - MUX chooses between the ALU result and memory data
 ### Expected Inputs & Outputs
-- Inputs
+- **Inputs**
   - Control signal (MemtoReg)
   - Data memory read data
   - ALU result
   - Write register address
-- Outputs
+- **Outputs**
   - Write data
 
 ## Code
@@ -54,8 +54,20 @@
 
 ## Conclusion
 ### Protection Against Hazards
--   
+- **Structural**
+  - Give IF and MEM their own memories (or L1 caches) so a load/store no longer collides with an instruction fetch
+    - I‑cache: next to the PC/IF MUX
+    - D‑cache (or simple data RAM): stays in MEM stage
+  - Make the register file “two‑phase” (writes in the first half‑cycle, reads in the second) so a write‑back can overlap the very next decode
+    - Clock‑split reg‑file: still in ID, but controlled by φ1/φ2
+- **Data**
+  -   
+- **Control**
+  -   
 ### Instruction Reordering
-- 
+- **Compiler**
+  - 
+- **Hardware**
+  -  
 ### WT and/or WB Improvements
 - 
