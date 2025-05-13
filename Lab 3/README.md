@@ -21,13 +21,13 @@
 - Adder combines PC + 4 and the sign-extended immediate value
 - Results are stored in the EX/MEM latch
 ### Expected Inputs & Outputs
-- Inputs
+- **Inputs**
   - Control signals (WB, M, RegDst, ALUOp, ALUSrc)
   - ID/EX next-PC (NPC)
   - Register read data 1 & 2
   - Sign-extended immediate
   - Function code
-- Outputs
+- **Outputs**
   - Control signals (WB, MemRead, MemWrite, Branch)
   - Branch target address
   - ALU zero flag
