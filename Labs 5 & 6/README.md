@@ -63,7 +63,7 @@
 - **Data**
   - Forwarding network so ALU results are used as soon as they are produced
     - Three 2‑bit ForwardA/ForwardB multiplexers added in EX
-    - Wires from the EX/MEM latch and the MEM/WB latch back to those MUXes (see mini diagram below)
+    - Wires from the EX/MEM latch and the MEM/WB latch back to those MUXes
   - Hazard‑detection unit to stall on a load‑use pair when the value cannot yet be forwarded
     - HazardDetect combinational block in ID that can freeze the IF/ID latch and insert a bubble into the ID/EX latch
 - **Control**
