@@ -25,11 +25,11 @@
 ### Purpose
 - 
 ### Components
-- [**IF Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/if_stage.v)**:**
-- [**ID Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/id_stage.v)**:**
-- [**EX Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/ex_stage.v)**:**
-- [**MEM Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mem_stage.v)**:**
-- [**WB Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/wb_stage.v)**:**
+- [**IF Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/if_stage.v)**:** Fetches the instruction at the address held in the PC, computes PC + 4 to point to the next sequential instruction, selects between PC + 4 and any branch target via the PCSrc MUX, and latches the fetched instruction and PC + 4 into IF/ID
+- [**ID Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/id_stage.v)**:** Reads the instruction and PC + 4 from IF/ID, decodes the opcode to generate control signals, reads the two source registers from the register file, sign-extends the 16-bit immediate, and latches all data and controls into ID/EX
+- [**EX Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/ex_stage.v)**:** Takes operands and control signals from ID/EX, uses the ALU to perform arithmetic/logical operations or compute branch targets, selects between register or immediate inputs via ALUSrc, and forwards the ALU result, zero flag, target address, and control bits into EX/MEM
+- [**MEM Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mem_stage.v)**:** Uses ALU result as the data memory address to perform loads or stores under MemRead/MemWrite, evaluates branch decisions by ANDing zero and branch to drive PCSrc next cycle, and latches read data or the ALU result plus control signals into MEM/WB
+- [**WB Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/wb_stage.v)**:** Selects between read data and ALU result via the MemtoReg MUX, and writes the chosen value back into the destination register of the register file
 ### Connections
 - 
 ### Expected Inputs & Outputs
