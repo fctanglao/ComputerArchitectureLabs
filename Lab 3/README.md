@@ -20,15 +20,15 @@
 - Inputs
   - Control signals
   - ID/EX next-PC (NPC)
-  - Read data 1 & 2
+  - Register read data 1 & 2
   - Sign-extended immediate
   - Function code
 - Outputs
-  - Control signal
+  - Control signals
   - Branch target address
   - ALU zero flag
   - ALU result
-  - Read data 2
+  - Register read data 2
 
 ## Code
 ### Block diagram for the EX stage
