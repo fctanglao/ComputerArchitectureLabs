@@ -17,13 +17,13 @@
 - Register read data 2 from the ID/EX latch provides data for load/store operations
 - Memory read data and ALU result are stored in the MEM/WB latch
 ### Expected Inputs & Outputs
-- Inputs
+- **Inputs**
   - Control signals (WB, MemRead, MemWrite, Branch)
   - Branch target address
   - ALU zero flag
   - ALU result
   - Register read data 2
-- Outputs
+- **Outputs**
   - PCSrc select signal
   - Control signals (RegWrite, MemtoReg)
   - Data memory read data
