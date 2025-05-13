@@ -24,7 +24,11 @@
   - Sign-extended immediate
   - Function code
 - Outputs
-  - 
+  - Control signal
+  - Branch target address
+  - ALU zero flag
+  - ALU result
+  - Read data 2
 
 ## Code
 ### Block diagram for the EX stage
