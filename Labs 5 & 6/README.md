@@ -28,7 +28,11 @@
 
 ## Overview
 ### Purpose
-- 
+- Connects the PC, instruction memory, register file, ALU, data memory, and write-back MUX into a single structural framework that implements the MIPS ISA in hardware
+- Splits instruction processing into five overlappable stages (IF, ID, EX, MEM, WB) so multiple instructions can be in flight simultaneously
+- Uses IF/ID, ID/EX, EX/MEM, and MEM/WB latches to decouple each stage’s logic, allowing the clock to run at a higher frequency
+- Leaves all data routing and operations in the datapath, while a dedicated control unit generates signals to steer multiplexers and functional units
+- Provides a clear, repeatable template for implementing, testing, and extending the processor’s hardware datapath in Verilog
 ### Components
 - [**IF Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/if_stage.v)**:** Fetches the instruction at the address held in the PC, computes PC + 4 to point to the next sequential instruction, selects between PC + 4 and any branch target via the PCSrc MUX, and latches the fetched instruction and PC + 4 into the IF/ID latch
 - [**ID Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/id_stage.v)**:** Reads the instruction and PC + 4 from the IF/ID latch, decodes the opcode to generate control signals, reads the two source registers from the register file, sign-extends the 16-bit immediate, and latches all data and controls into the ID/EX latch
