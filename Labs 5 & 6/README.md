@@ -11,7 +11,12 @@
 - 
 ### Expected Inputs & Outputs
 - Inputs
+  - Control signal (MemtoReg)
+  - Data memory read data
+  - ALU result
+  - Write register address
 - Outputs
+  - Write data
 
 ## Code
 ### Block diagram for the WB stage
