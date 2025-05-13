@@ -8,7 +8,7 @@
 ### Components
 - [**Multiplexer (MUX)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mux_2x1_32bit.v)**:** Selects whether the value to write back to the register file comes from data memory or directly from the ALU
 ### Connections
-- 
+- MUX chooses between the ALU result and memory data
 ### Expected Inputs & Outputs
 - Inputs
   - Control signal (MemtoReg)
