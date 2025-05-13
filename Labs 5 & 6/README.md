@@ -35,11 +35,6 @@
 - [**EX Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/ex_stage.v)**:** Takes operands and control signals from the ID/EX latch, uses the ALU to perform arithmetic/logical operations or compute branch targets, selects between register or immediate inputs via ALUSrc, and forwards the ALU result, zero flag, target address, and control bits into the EX/MEM latch
 - [**MEM Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/mem_stage.v)**:** Uses ALU result as the data memory address to perform loads or stores under MemRead/MemWrite, evaluates branch decisions by ANDing zero and branch to drive PCSrc next cycle, and latches read data or the ALU result plus control signals into the MEM/WB latch
 - [**WB Stage**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Labs%205%20%26%206/wb_stage.v)**:** Selects between read data and ALU result via the MemtoReg MUX, and writes the chosen value back into the destination register of the register file
-### Connections
-- 
-### Expected Inputs & Outputs
-- Inputs
-- Outputs
 
 ## Code
 ### Block diagram for the MIPS datapath
