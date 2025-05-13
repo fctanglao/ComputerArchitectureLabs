@@ -8,9 +8,9 @@
 - Evaluate branch decisions by combining the zero flag with the branch control signal to drive PCSrc
 - Pass along the memory data and control bits via the MEM/WB latch
 ### Components
-- [**AND Gate**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%204/and_gate.v)**:**
-- [**Data Memory Unit**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%204/data_memory.v)**:**
-- [**MEM/WB Latch**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%204/mem_wb_latch.v)**:**
+- [**AND Gate**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%204/and_gate.v)**:** Combines the zero flag with the branch control signal; if both are true, asserts PCSrc to cause the next PC to be the branch target
+- [**Data Memory Unit**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%204/data_memory.v)**:** If MemRead is asserted, reads a word from the address given by the ALU result; if MemWrite is asserted, writes the second register operand to that address
+- [**MEM/WB Latch**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%204/mem_wb_latch.v)**:** Latches the data read from memory, the ALU result, and control signals to pass to the next stage
 ### Connections
 - 
 ### Expected Inputs & Outputs
