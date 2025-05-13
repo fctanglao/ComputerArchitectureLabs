@@ -15,7 +15,11 @@
 - [**Adder**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/adder.v)**:** Adds the sign-extended immediate (shifted left two bits) to NPC to compute the branch target address
 - [**EX/MEM Latch**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/ex_mem_latch.v)**:**  Latches the ALU result, zero flag, branch target, read data 2, and relevant control signals for the MEM stage
 ### Connections
-- 
+- Multiplexers select appropriate data paths based on instruction type
+- ALU control unit receives operation type from control signals and function code
+- ALU receives operands from register file or immediate value
+- Adder combines PC + 4 and the sign-extended immediate value
+- Results are stored in the EX/MEM latch
 ### Expected Inputs & Outputs
 - Inputs
   - Control signals (WB, M, RegDst, ALUOp, ALUSrc)
