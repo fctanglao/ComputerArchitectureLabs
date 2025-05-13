@@ -15,7 +15,16 @@
 - 
 ### Expected Inputs & Outputs
 - Inputs
+  - Control signals
+  - Branch target address
+  - ALU zero flag
+  - ALU result
+  - Register read data 2
 - Outputs
+  - Control signals
+  - Data memory read data
+  - ALU result
+  - Write register address
 
 ## Code
 ### Block diagram for the MEM stage
