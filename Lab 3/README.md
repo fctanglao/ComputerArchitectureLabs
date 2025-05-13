@@ -17,7 +17,7 @@
 ### Connections
 - Multiplexers select appropriate data paths based on instruction type
 - ALU control unit receives operation type from control signals and function code
-- ALU receives operands from register file or immediate value
+- ALU receives operands from register file or sign-extended immediate value
 - Adder combines PC + 4 and the sign-extended immediate value
 - Results are stored in the EX/MEM latch
 ### Expected Inputs & Outputs
