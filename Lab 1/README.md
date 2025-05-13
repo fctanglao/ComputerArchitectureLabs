@@ -20,10 +20,10 @@
 - Adder feeds PC + 4 into the MUX
 - Adder latches PC + 4 into the IF/ID latch
 ### Expected Inputs & Outputs
-- Inputs
+- **Inputs**
   - PCSrc select signal from the EX/MEM latch
   - Branch target address from the EX/MEM latch
-- Outputs
+- **Outputs**
   - PC + 4 (NPC)
   - Fetched instruction (IR)
 
