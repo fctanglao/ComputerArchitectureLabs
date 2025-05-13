@@ -18,7 +18,13 @@
 - 
 ### Expected Inputs & Outputs
 - Inputs
+  - Control signals
+  - ID/EX next-PC (NPC)
+  - Read data 1 & 2
+  - Sign-extended immediate
+  - Function code
 - Outputs
+  - 
 
 ## Code
 ### Block diagram for the EX stage
