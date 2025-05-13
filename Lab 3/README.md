@@ -11,7 +11,7 @@
 - [**5-Bit Multiplexer (MUX)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/mux_2x1_5bit.v)**:** Selects the destination register number for the later write-back stage, based on RegDst
 - [**32-Bit Multiplexer (MUX)**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/mux_2x1_32bit.v)**:** Chooses between the second register operand or the sign-extended immediate as the ALU’s second input, based on the ALUSrc control signal
 - [**ALU Control Unit**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/alu_control.v)**:** Combines the high-level ALUOp bits with the instruction’s funct field to produce the specific ALU operation code
-- [**ALU**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/alu.v)**:** Performs arithmetic or logical operations on its two inputs and outputs the result and a zero flag
+- [**ALU**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/alu.v)**:** Performs arithmetic/logical operations on its two inputs and outputs the result and a zero flag
 - [**Adder**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/adder.v)**:** Adds the sign-extended immediate (shifted left two bits) to NPC to compute the branch target address
 - [**EX/MEM Latch**](https://github.com/fctanglao/ComputerArchitectureLabs/blob/main/Lab%203/ex_mem_latch.v)**:**  Latches the ALU result, zero flag, branch target, read data 2, and relevant control signals for the MEM stage
 ### Connections
