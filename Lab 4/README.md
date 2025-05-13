@@ -15,13 +15,13 @@
 - 
 ### Expected Inputs & Outputs
 - Inputs
-  - Control signals
+  - Control signals (WB, MemRead, MemWrite, Branch)
   - Branch target address
   - ALU zero flag
   - ALU result
   - Register read data 2
 - Outputs
-  - Control signals
+  - Control signals (WB)
   - Data memory read data
   - ALU result
   - Write register address
