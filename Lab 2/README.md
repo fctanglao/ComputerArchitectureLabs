@@ -26,7 +26,7 @@
   - Write register address from the MEM/WB latch
   - Write data from the WB stage
 - Outputs
-  - Control signals
+  - Control signals (WB, M, RegDst, ALUOp, ALUSrc)
   - ID/EX next-PC (NPC)
   - Rgister read data 1 & 2
   - Sign-extended immediate
