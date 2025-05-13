@@ -28,7 +28,7 @@
 - Outputs
   - Control signals (WB, M, RegDst, ALUOp, ALUSrc)
   - ID/EX next-PC (NPC)
-  - Rgister read data 1 & 2
+  - Register read data 1 & 2
   - Sign-extended immediate
   - Function code
 
