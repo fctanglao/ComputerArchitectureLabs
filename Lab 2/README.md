@@ -15,7 +15,7 @@
 ### Connections
 - IF/ID instruction bits (IR) are decoded to provide the opcode, source registers, and immmediate field
 - IF/ID next-PC value (NPC) is forwarded to the next stage
-- Sign-extend unit latches the extended immediate to the ID/EX latch
+- Sign-extend unit latches the sign-extended immediate to the ID/EX latch
 - Control unit generates and pipelines control signals to other stages
 - Register file latches the contents in the source registers to the ID/EX latch
 ### Expected Inputs & Outputs
